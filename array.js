@@ -56,3 +56,32 @@ const name ='Mohammed Faizal T'
 
 console.log(...numbers)
 // console.log(...fruits)
+
+
+const numbers2=[1,3,5,7,9]
+
+const result=[]
+const unique={}
+for(let i=0;i<numbers.length;i++){
+    if(!unique[numbers[i]]){
+        unique[numbers[i]]=1
+    }
+}
+for(let i=0;i<numbers2.length;i++){
+    if(!unique[numbers2[i]]){
+        unique[numbers2[i]]=1
+    }else{
+        unique[numbers2[i]]++
+    }
+}
+console.log(unique)
+
+for(let key in unique){
+    if(unique[key]===1){
+        result.push(parseInt(key))
+    }
+}
+
+
+console.log(result)
+
