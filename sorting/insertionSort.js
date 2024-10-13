@@ -1,3 +1,6 @@
+
+//Insertion Sort	O(n)	O(n^2)	O(n^2)
+
 function insertionSort(arr) {
     for (let i = 1; i < arr.length; i++) {
         let nti = arr[i];

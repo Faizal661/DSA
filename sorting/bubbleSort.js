@@ -1,4 +1,6 @@
 
+//Bubble Sort	O(n)	O(n^2)	O(n^2)
+
 function bubbleSort(arr) {
     let swap
     do {

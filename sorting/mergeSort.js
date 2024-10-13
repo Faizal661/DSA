@@ -1,3 +1,5 @@
+//Merge Sort	O(n log n)	O(n log n)	O(n log n)
+
 const arr = [0, -6, 4, 12, -2, 8]
 
 function mergeSort(arr) {

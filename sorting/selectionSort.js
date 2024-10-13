@@ -1,3 +1,5 @@
+//Selection Sort	O(n^2)	O(n^2)	O(n^2)
+
 function selectionSort(arr) {
     const n = arr.length;
 

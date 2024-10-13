@@ -1,3 +1,5 @@
+//Quick Sort	O(n log n)	O(n log n)	O(n^2)
+
 function quickSortDescending(arr) {
     if (arr.length < 2) {
         return arr
