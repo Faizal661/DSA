@@ -61,10 +61,11 @@ class HashTable {
 }
 
 const table = new HashTable(10);
-table.set('name', 'faizal')
-table.set('mane', 'asdf')
-table.set('age', 22) 
-console.log(table.get('name'))
-table.dispaly()
-table.remove('mane')
+// table.set('name', 'faizal')
+// table.set('mane', 'asdf')
+// table.set('age', 22) 
+
+// console.log(table.get('name'))
+// table.dispaly()
+// table.remove('mane')
 table.dispaly()
