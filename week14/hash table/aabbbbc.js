@@ -44,9 +44,9 @@ class HashTable {
 
     dispaly() {
         for (let i = 0; i < this.size; i++) {
-            if (this.table[i]) {
+            // if (this.table[i]) {
                 console.log(i, this.table[i])
-            }
+            // }
         }
     }
 

@@ -1,6 +1,6 @@
 //      Array initialization //
+// const numbers = [1, 2, 3, 4, 5];
 
-const numbers = [1, 2, 3, 4, 5];
 const fruits = ["apple", "banana", "orange"];
 const name ='Mohammed Faizal T'
 // const mixed = [10, "hello", true];
@@ -57,6 +57,7 @@ const name ='Mohammed Faizal T'
 console.log(...numbers)
 // console.log(...fruits)
 
+const numbers = [1, 2, 3, 4, 5];
 
 const numbers2=[1,3,5,7,9]
 
