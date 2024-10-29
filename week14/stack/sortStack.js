@@ -23,6 +23,8 @@ class Stack {
 }
 
 const stack = new Stack()
+// console.log(stack.peek())
+
 stack.push(5)
 stack.push(1)
 stack.push(8)

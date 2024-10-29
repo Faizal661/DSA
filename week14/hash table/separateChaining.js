@@ -50,7 +50,7 @@ class HashTable {
         }
     }
 
-    dispaly() {
+    display() {
         for (let i = 0; i < this.size; i++) {
             if (this.table[i]) {
                 console.log(i, this.table[i])
@@ -66,6 +66,6 @@ const table = new HashTable(10);
 // table.set('age', 22) 
 
 // console.log(table.get('name'))
-// table.dispaly()
+// table.display()
 // table.remove('mane')
-table.dispaly()
+table.display()

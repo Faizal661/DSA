@@ -11,6 +11,7 @@ function mergeSort(arr) {
     let rightArr = arr.slice(mid)
     return merge(mergeSort(leftArr), mergeSort(rightArr))
 }
+
 function merge(leftArr, rightArr) {
     let sortedArr = [];
     while (leftArr.length && rightArr.length) {
