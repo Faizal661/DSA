@@ -1,4 +1,6 @@
 //    Find the index of a given number in a sorted array:
+const sortedNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
 function binarySearch(arr, target) {
     let left = 0;
     let right = arr.length - 1;
@@ -14,7 +16,6 @@ function binarySearch(arr, target) {
     }
     return -1; 
 }
-const sortedNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const target1 = 3;
 const target2 = 7;
 console.log(binarySearch(sortedNumbers, target1));

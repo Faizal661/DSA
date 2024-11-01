@@ -1,23 +1,23 @@
 //Quick Sort	O(n log n)	O(n log n)	O(n^2)
 
-function quickSortDescending(arr) {
-    if (arr.length < 2) {
-        return arr
-    }
-    let pivot = arr[arr.length - 1]
-    let left = []
-    let right = []
-    for (let i = 0; i < arr.length - 1; i++) {
-        if (arr[i] > pivot) {
-            left.push(arr[i])
-        } else {
-            right.push(arr[i])
-        }
-    }
-    return [...quickSortDescending(left), pivot, ...quickSortDescending(right)]
-}
+// function quickSortDescending(arr) {
+//     if (arr.length < 2) {
+//         return arr
+//     }
+//     let pivot = arr[arr.length - 1]
+//     let left = []
+//     let right = []
+//     for (let i = 0; i < arr.length - 1; i++) {
+//         if (arr[i] > pivot) {
+//             left.push(arr[i])
+//         } else {
+//             right.push(arr[i])
+//         }
+//     }
+//     return [...quickSortDescending(left), pivot, ...quickSortDescending(right)]
+// }
 
-const arr = [8, - 4, 20, -6, 2]
+// const arr = [8, - 4, 20, -6, 2]
 // console.log('Unsorted Array', arr)
 // console.log('Sorted Array  ',quickSortDescending(arr))   
 

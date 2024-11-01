@@ -54,7 +54,7 @@ const name ='Mohammed Faizal T'
 // console.log(numbers)
 // console.log(map)
 
-console.log(...numbers)
+// console.log(...numbers)
 // console.log(...fruits)
 
 const numbers = [1, 2, 3, 4, 5];
