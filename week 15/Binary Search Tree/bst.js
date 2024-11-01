@@ -10,6 +10,7 @@ class BinarySearchTree {
     constructor() {
         this.root = null
     }
+
     insert(data) {
         let newNode = new Node(data)
         let current = this.root
@@ -35,6 +36,7 @@ class BinarySearchTree {
             }
         }
     }
+
     contains(data) {
         let current = this.root
         while (current !== null) {
