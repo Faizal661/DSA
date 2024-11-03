@@ -11,6 +11,7 @@ class BinarySearchTree {
         this.root = null
     }
 
+
     insert(data) {
         let newNode = new Node(data)
         let current = this.root
@@ -51,6 +52,44 @@ class BinarySearchTree {
         return false
     }
 
+    delete(data) {
+        this.root = this.deleteRecursive(this.root, data);
+    }
+
+    deleteRecursive(root, data) {
+        if (root === null) {
+            return root;
+        }
+
+        if (data < root.data) {
+            root.left = this.deleteRecursive(root.left, data);
+        } else if (data > root.data) {
+            root.right = this.deleteRecursive(root.right,data);
+        } else {
+            // Node with no child or one child
+            if (root.left === null) {
+                return root.right;
+            } else if (root.right === null) {
+                return root.left;
+            }
+
+            // Node with two children
+            const temp = this.minValueNode(root.right);
+            root.data = temp.data;
+            root.right = this.deleteRecursive(root.right, temp.data);
+        }
+        return root;
+    }
+
+    minValueNode(node) {
+        let current = node;
+        while (current.left !== null) {
+            current = current.left;
+        }
+        return current;
+    }
+
+
     inorder(node) {
         if (node) {
             this.inorder(node.left)
@@ -81,12 +120,14 @@ bst.insert(17)
 bst.insert(1)
 bst.insert(123)
 bst.insert(24)
-console.log('inorder')
-bst.inorder(bst.root)
+bst.delete(10)
+// console.log('inorder')
+// bst.inorder(bst.root)
+
 console.log('preorder')
 bst.preorder(bst.root)
-console.log('postorder')
-bst.postorder(bst.root)
+// console.log('postorder')
+// bst.postorder(bst.root)
 
 
 // console.log(bst.root)
